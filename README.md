@@ -1,4 +1,4 @@
-<body style=""><h2>Stop Words Remover [php wrapper]</h2><style></style><p>
+<body style=""><h2>Stop Words Remover [php wrapper]</h2><p>
 </p><p>To use the code, just paste this code project folder in your project and to use the library,
 </p><p> add <!--?php include_once('stopwords/autoload.php'); <\br--> at the begining of your php code.</p><p></p><h3>Example application</h3><p></p><h4>1. Basic Application: </h4><p><code>$sentence="james is a good boy"; //a simple sentence  </code></p><p><code>$lang=new stopwords($sentence); #english as the default language and delimeter is empty space
  </code></p><p><code> $withoutstopwords=$lang-&gt;results;</code></p><p><code>print($withoutstopwords);</code></p><p></p><p> This would output:</p><p><code>james boy</code></p><p></p><p></p><h4>2. Advanced Application - with different languages: (<a href="#langs">See supported languages in #3</a>) </h4><p><b>to translate anothe language one must specify these parameters example: 
