@@ -1,2 +1,12 @@
-# stop-words-remover-php-wrapper
-stop filter remover -  php wrapper for all spoken languages similar to python NLTK for machine learning
+<body style=""><h2>Stop Words Remover [php wrapper]</h2><style></style><p>
+</p><p>To use the code, just paste this code project folder in your project and to use the library,
+</p><p> add <!--?php include_once('stopwords/autoload.php'); <\br--> at the begining of your php code.</p><p></p><h3>Example application</h3><p></p><h4>1. Basic Application: </h4><p><code>$sentence="james is a good boy"; //a simple sentence  </code></p><p><code>$lang=new stopwords($sentence); #english as the default language and delimeter is empty space
+ </code></p><p><code> $withoutstopwords=$lang-&gt;results;</code></p><p><code>print($withoutstopwords);</code></p><p></p><p> This would output:</p><p><code>james boy</code></p><p></p><p></p><h4>2. Advanced Application - with different languages: (<a href="#langs">See supported languages in #3</a>) </h4><p><b>to translate anothe language one must specify these parameters example: 
+	</b></p><p><code> $language_name="french";</code></p><p><code>$delimeter=" "; #this is can be a space, comma etc.</code></p><p> <code>$sentence_in_french="James est un bon garçon"; //a simple sentence in french  </code> </p><p><code>$lang=new stopwords($sentence,$delimeter,$language_name);</code> </p><p><code> $withoutstopwords=$lang-&gt;results;</code></p><p><code>print($withoutstopwords);</code></p><p></p><p> This would output:</p><p><code>James garçon</code></p><p></p><p></p><p>-----------------------------------------------------</p><p>#to show all the supported languages:</p><p>#------------------------------------------------------</p><p><code id="langs" style="padding:4px;">$obj=new stopwords();</code></p><p><code id="langs" style="padding:4px;">
+
+$languages=$obj-&gt;language_meta;</code></p><p><code id="langs" style="padding:4px;">
+foreach($languages as $key=&gt;$value){</code></p><p><code id="langs" style="padding:4px;">
+	print($value);</code></p><p><code id="langs" style="padding:4px;">
+}
+</code></p><p><code id="langs" style="padding:4px;">
+</code></p><p><code id="langs" style="padding:4px;"> Would Output:</code><br>arabic<br>bulgarian<br>catalan<br>czech<br>danish<br>dutch<br>english<br>finnish<br>french<br>german<br>gujarati<br>hebrew<br>hindi<br>hungarian<br>indonesian<br>malaysian<br>italian<br>norwegian<br>polish<br>portuguese<br>romanian<br>russian<br>slovak<br>spanish<br>swedish<br>turkish<br>ukrainian<br>vietnamese<br>persian<br></p><p> </p><p>The stop words used are derived from: <a href="https://github.com/Alir3z4/stop-words/tree/master" target="_blank">https://github.com/Alir3z4/stop-words/tree/master</a></p></body>
